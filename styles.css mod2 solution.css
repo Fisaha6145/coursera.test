@@ -1,0 +1,91 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* optional */
+}
+
+/* Header styles */
+header {
+  background-color: #5cbdb9;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Center align the content */
+}
+
+/* Main styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Food section styles */
+.food-section {
+  background-color: #eee;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 31%;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .food-section {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .food-section {
+    width: 100%;
+  }
+}
+
+/* Section title styles */
+.section-title {
+  background-color: #ffcc00;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 125%;
+  padding: 5px 10px;
+  position: relative; /* Change to relative positioning */
+  white-space: nowrap;
+  text-align: center; /* Center align the content */
+  margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.section-title::after {
+  content: "\A"; /* Adds a line break after each food name */
+  white-space: pre;
+}
+
+@media screen and (max-width: 767px) {
+  .section-title {
+    position: static;
+    white-space: normal;
+    text-align: left; /* Reset text alignment */
+    margin-bottom: 20px; /* Reset margin-bottom */
+  }
+}
+
+/* Section content styles */
+.section-content {
+  padding: 20px;
+}
+
+/* Optional styles */
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 175%; /* optional */
+}
+
+.food-section p {
+  margin: 0;
+  padding: 0;
+}
